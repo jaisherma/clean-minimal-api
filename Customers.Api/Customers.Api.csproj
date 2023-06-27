@@ -7,7 +7,7 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
    <PropertyGroup>
-       <OutputPath>%WORKSPACE%/out/</OutputPath>
+       <OutputPath>${WORKSPACE}\build\</OutputPath>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="FastEndpoints" Version="4.1.0-beta8" />
