@@ -6,9 +6,6 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
-   <PropertyGroup>
-       <OutputPath>${WORKSPACE}\build\</OutputPath>
-    </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="FastEndpoints" Version="4.1.0-beta8" />
         <PackageReference Include="FastEndpoints.Swagger" Version="4.1.0-beta8" />
@@ -16,4 +13,9 @@
         <PackageReference Include="Dapper" Version="2.0.123" />
         <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.4" />
     </ItemGroup>
+<Target Name="CustomOutputPath" BeforeTargets="BeforeBuild">
+  <PropertyGroup>
+    <OutputPath>$(WORKSPACE)\out\</OutputPath>
+  </PropertyGroup>
+</Target>
 </Project>
