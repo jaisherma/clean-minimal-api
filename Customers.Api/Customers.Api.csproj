@@ -15,7 +15,7 @@
     </ItemGroup>
 <Target Name="CustomOutputPath" BeforeTargets="BeforeBuild">
   <PropertyGroup>
-    <OutputPath>$(WORKSPACE)\out\</OutputPath>
+    <OutputPath>${WORKSPACE}\out\</OutputPath>
   </PropertyGroup>
 </Target>
 </Project>
