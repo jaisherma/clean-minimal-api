@@ -6,7 +6,9 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
-
+   <PropertyGroup>
+       <OutputPath>%WORKSPACE%/out/</OutputPath>
+    </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="FastEndpoints" Version="4.1.0-beta8" />
         <PackageReference Include="FastEndpoints.Swagger" Version="4.1.0-beta8" />
